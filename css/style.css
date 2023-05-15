@@ -51,8 +51,7 @@ table {
 
 /* Write your css below here */
 
-/**** Designing for Mobile First ****/
-
+/**** DESIGNING FOR MOBILE FIRST ****/
 * {
 	box-sizing: border-box;
 }
@@ -70,7 +69,7 @@ body {
 	height: 100%;
 	width: 100%;
 	display: grid;
-	grid-template:
+	grid-template-areas:
 		'nav'
 		'header'
 		'hero'
@@ -246,7 +245,7 @@ main {
 	grid-area: main;
 	padding: 0 30px;
 	display: grid;	
-	grid-template:
+	grid-template-areas:
 		'section-primary'
 		'section-secondary'
 		'section-advertisement';
@@ -450,9 +449,9 @@ footer .footer-bottom .footer-bottom-content {
 	text-align: center;
 } 
 
+/**** MEDIA QUERIES ****/
 
-
-/**** Small Device  ****/
+/**** Small Devices  ****/
 @media screen and (width >= 500px) {
 	nav .nav-top {
 		justify-content: center;
@@ -523,7 +522,7 @@ footer .footer-bottom .footer-bottom-content {
 
 	footer .footer-top .footer-top-right {
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'trending-guides trending-guides'
 			'footer-top-right-1 footer-top-right-2'
 			'footer-top-right-3 footer-top-right-3';
@@ -550,7 +549,7 @@ footer .footer-bottom .footer-bottom-content {
 		grid-area: footer-top-right-3;
 		flex-direction: column;
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'footer-top-right-3-a footer-top-right-3-b';
 		column-gap: 40px;
 	}
@@ -584,7 +583,7 @@ footer .footer-bottom .footer-bottom-content {
 	}
 }
 
-/**** Medium Device ****/
+/**** Medium Devices ****/
 @media screen and (width >= 800px) {
 	.hero img {
 		margin: 0 30px;
@@ -610,7 +609,7 @@ footer .footer-bottom .footer-bottom-content {
 
 	footer {
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'footer-top'
 			'footer-bottom';
 		gap: 20px;
@@ -619,7 +618,7 @@ footer .footer-bottom .footer-bottom-content {
 	footer .footer-top {
 		grid-area: footer-top;
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'footer-top-left'
 			'footer-top-right';
 		gap: 20px;
@@ -638,7 +637,7 @@ footer .footer-bottom .footer-bottom-content {
 	footer .footer-top .footer-top-right {
 		grid-area: footer-top-right;
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'. trending-guides .'
 			'footer-top-right-1 footer-top-right-2 footer-top-right-3';
 		column-gap: 40px;
@@ -691,7 +690,7 @@ footer .footer-bottom .footer-bottom-content {
 
 	main {
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'section-primary aside'
 			'section-secondary section-secondary'
 			'section-advertisement section-advertisement';
@@ -705,7 +704,7 @@ footer .footer-bottom .footer-bottom-content {
 	}
 }
 
-/**** Large Device ****/
+/**** Large Devices ****/
 @media screen and (width >= 1000px) {
 	header,
 	.hero img,
@@ -783,7 +782,7 @@ footer .footer-bottom .footer-bottom-content {
 
 	footer {
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'footer-top'
 			'footer-bottom';
 		gap: 20px;
@@ -800,14 +799,12 @@ footer .footer-bottom .footer-bottom-content {
 	.hero img {
 		max-width: 1155px;
 		max-height: 620px;
-
-		/* margin: auto; */
 	}
 
 	footer .footer-top {
 		grid-area: footer-top;
 		display: grid;
-		grid-template:
+		grid-template-areas:
 			'footer-top-left footer-top-right';
 		gap: 40px;
 		border-bottom: 1px solid #b5b5bd;
