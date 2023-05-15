@@ -256,6 +256,10 @@ main section.primary {
 	grid-area: section-primary;
 }
 
+.footer-container footer p {
+	line-height: 30px;
+}
+
 main section.primary p {
 	margin-bottom: 10px;
 	font-size: 1.188em;
@@ -482,10 +486,6 @@ footer .footer-bottom .footer-bottom-content {
 
 	main {
 		padding: 0 70px;
-	}
-
-	footer p {
-		line-height: 30px;
 	}
 
 	main section.primary p {
